@@ -3,12 +3,13 @@ a3-HvanTol-MWeirath
 
 ## Team Members
 
-1. Michelle Weirathmueller(michw)
-2. Helena van Tol
+1. Michelle Weirathmueller (michw)
+2. Helena van Tol (hmvantol)
 
-## Project Name
+## Oceanography visualization --> there's got to be a more exciting name... right?
 
 ![Thumbnail](thumbnail.png)
+We can put our own images in here...
 
 This is an example repository for your assignment 3 submission.
 (Put your a brief description of your final interactive visualization application and your dataset here.)
@@ -26,7 +27,8 @@ If you put your work online, please also write a [one-line description and add a
 
 ## Story Board
 
-Put either your storyboard content or a [link to your storyboard pdf file](storyboard.pdf?raw=true) here. Just like A2, you can use any software to create a *reasonable* pdf storyboard.
+### Data domain
+Since we are both Oceanography graduate students, we decided to go with an ocean-related dataset. 
 
 
 ### Changes between Storyboard and the Final Implementation
