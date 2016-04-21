@@ -8,7 +8,7 @@ a3-HvanTol-MWeirath
 
 ## Interactive World Ocean Atlas
 
-![Thumbnail](sketch1.jpg)
+![Sketch 1](sketch1.jpg =100x) 
 We can put our own images in here...
 
 This is an example repository for your assignment 3 submission.
