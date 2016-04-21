@@ -8,8 +8,6 @@ a3-HvanTol-MWeirath
 
 ## Interactive World Ocean Atlas
 
-![Sketch 1](sketch1.jpg) 
-We can put our own images in here...
 
 This is an example repository for your assignment 3 submission.
 (Put your a brief description of your final interactive visualization application and your dataset here.)
@@ -30,6 +28,10 @@ If you put your work online, please also write a [one-line description and add a
 ### Data domain
 Since we are both Oceanography graduate students, we decided to go with an ocean-related dataset: the [World Ocean Atlas 2013 (WOA 2013)](http://www.nodc.noaa.gov/OC5/woa13/woa13data.html). There are a number of simple variables that are often used by oceanographers to study the movements of different water masses. Some of those variables include temperature, salinity, and dissolved oxygen. The datasets provided through the WOA website are available as gridded files for each type of measurement. At each gridded location, the files contain a measurement "profile", which is a series of values interpolated to pre-defined depth bins. Oceanographers often look at measurements as a function of depth to understand the vertical stratification throughout the water column at a particular location. We will begin our visualization using one-degree gridded annual temperature, averaged between 2005-2012.
 
+Oceanographers regularly explore large multi-variable data sets in 4D space (longitude, latitude, depth, time). Common visualization tools include maps, depth profiles, and T-S diagrams. On research cruises, oceanographers will interact with data as it is being collected to make decisions about where to sample along the cruise track and at which depths. Data exploration could be supported by linking multiple conmmonly used visualizations, allowing the user to observe multiple dimensions at once. Filtering selections could also be used to connect multiple variable or narrow down particular regions of interest.
+
+Here is our first idea:
+![Sketch 1](sketch1.jpg)
 
 ### Changes between Storyboard and the Final Implementation
 
