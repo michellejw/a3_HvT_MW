@@ -6,7 +6,7 @@ a3-HvanTol-MWeirath
 1. Michelle Weirathmueller (michw)
 2. Helena van Tol (hmvantol)
 
-## Oceanography visualization --> there's got to be a more exciting name... right?
+## Awesome oceanography visualization --> there's got to be a more exciting name... right?
 
 ![Thumbnail](thumbnail.png)
 We can put our own images in here...
