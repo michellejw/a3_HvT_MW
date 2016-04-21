@@ -6,9 +6,9 @@ a3-HvanTol-MWeirath
 1. Michelle Weirathmueller (michw)
 2. Helena van Tol (hmvantol)
 
-## Awesome oceanography visualization --> there's got to be a more exciting name... right?
+## Interactive World Ocean Atlas
 
-![Thumbnail](thumbnail.png)
+![Thumbnail](sketch1.jpg)
 We can put our own images in here...
 
 This is an example repository for your assignment 3 submission.
