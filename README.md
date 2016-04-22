@@ -33,6 +33,10 @@ Oceanographers regularly explore large multi-variable data sets in 4D space (lon
 Here is our first idea:
 ![Sketch 1](sketch1.jpg)
 
+This is a sketch of the type of map we are envisioning (though for now, note that coordinates are not labeled correctly and the default image color map could probably be better).
+
+![tempmap](tempmap.png)
+
 ### Changes between Storyboard and the Final Implementation
 
 A paragraph explaining changes between the storyboard and the final implementation.
