@@ -24,7 +24,7 @@ path {
 <script src="//d3js.org/topojson.v1.min.js"></script>
 <script>
 
-var margin = {top:20, right:20, bottom:30, left:50},
+var margin = {top:60, right:20, bottom:20, left:80},
 	width = 600 - margin.left - margin.right,
 	height = 800 - margin.top - margin.bottom;
 
@@ -59,7 +59,9 @@ var svg = d3.select("body").append("svg")
 d3.json("topo_woa.json", function(error, data){
 	if (error) return console.error(error);
 	
-	var latlon = data.objects.woa.geometries[200].properties;
+	console.log(data);
+	
+	var latlon = data.objects.woa.geometries[1800].properties;
 	
 	graph = [];
 	
@@ -92,6 +94,21 @@ d3.json("topo_woa.json", function(error, data){
 	svg.append("g")
 		.attr("class", "y axis")
 		.call(yAxis);
+		
+	svg.append("text")
+		.attr("class", "x label")
+		.attr("text-anchor", "middle")
+		.attr("font-size", "14px")
+		.attr("x", width/2)
+		.attr("y", -margin.top/2)
+		.text("Temperature (\xB0C)");
+	
+	svg.append("text")
+		.attr("class", "y label")
+		.attr("text-anchor", "middle")
+		.attr("font-size", "14px")
+		.attr("transform", "translate("+(-margin.left/1.5)+","+(height/2)+")rotate(-90)")
+		.text("Depth (m)");
 	
 	svg.append("path")
 		.datum(graph)
