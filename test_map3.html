@@ -39,26 +39,32 @@ d3.json("woa_land.json", function(error, data){
 // 		.datum(topojson.feature(data, data.objects.land))
 // 		.attr("d", d3.geo.path().projection(d3.geo.mercator()));
 	
+// 	longScale.range([-10,width]).domain([-180,180]);
+// 	latScale.range([height,-10]).domain([-90,90]);
+
 	longScale.range([0,width]).domain([-180,180]);
 	latScale.range([height,0]).domain([-90,90]);
+
 		
 	var rect = svg.selectAll("rect")
 		.data(dataset).enter()
 		.append("rect")
 		.attr("x", function(d) {
+// 			return longScale(d.geometry.coordinates[0]);
 			return longScale(d.geometry.coordinates[0])-7;
 		})
 		.attr("y", function(d) {
-			return latScale(d.geometry.coordinates[1]+2.5);
+// 			return latScale(d.geometry.coordinates[1]);
+			return latScale(d.geometry.coordinates[1]+2.5)
 		})
 		.attr("width",width/(360/5))
 		.attr("height",height/(180/5))
 		.style("stroke", "none")
 		.style("fill", "black")
-		.style("fill-opacity",0.5); //change opacity to see rectangles or make them disappear
+		.style("fill-opacity",0.2); //change opacity to see rectangles or make them disappear
 		
 	rect.on({
-		"mouseover" : function(d) { d3.select(this).style("stroke", "black"); },
+		"mouseover" : function(d) { d3.select(this).style("stroke", "white"); },
 		"mouseout" : function(d) { d3.select(this).style("stroke", "none"); },
 		"click" : function(d,i) {
 			console.log(i);
