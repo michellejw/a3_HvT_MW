@@ -17,13 +17,13 @@ var svg = d3.select("body").append("svg")
 
 d3.json("topo_woa.json", function(error, data){
 	if (error) return console.error(error);
-	console.log(data);
+	
+	console.log(topojson.feature(data, data.objects.woa).features);
 	
 	svg.append("path")
 		.datum(topojson.feature(data, data.objects.woa))
 		.attr("d", d3.geo.path().projection(d3.geo.mercator()))
-		.append("rect")
-		.attr("fill", "#ff0000");
+		.attr("fill", "green");
 	
 
 	
