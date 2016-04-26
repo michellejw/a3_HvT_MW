@@ -9,7 +9,7 @@
 <script>
 
 var width = 1000, 
-	height = 600;
+	height = 500;
 
 var svg = d3.select("body")
 	.append("svg")
@@ -19,7 +19,7 @@ var svg = d3.select("body")
 var dataset; //Global dataset variable so we can call it outside the callback function
 
 var latScale = d3.scale.linear();
-var longScale = d3.scale.linear();
+var longScale = d3.scale.linear(); // This only works because mercator projection is linear
 
 svg.append("image")
 	.attr("xlink:href","tempmap.png") // If you adjust the map in matlab so that there are no margins it will fit. Maybe try to save it as an svg image. Alternatively shift the rectangles by the margins in your matlab image.
@@ -51,8 +51,8 @@ d3.json("woa_land.json", function(error, data){
 		.attr("y", function(d) {
 			return latScale(d.geometry.coordinates[1]);
 		})
-		.attr("width",14)
-		.attr("height",17)
+		.attr("width",width/(360/5))
+		.attr("height",height/(180/5))
 		.style("stroke", "none")
 		.style("fill", "black")
 		.style("fill-opacity",0.5); //change opacity to see rectangles or make them disappear
