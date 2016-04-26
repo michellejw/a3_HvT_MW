@@ -22,7 +22,7 @@ var latScale = d3.scale.linear();
 var longScale = d3.scale.linear(); // This only works because mercator projection is linear
 
 svg.append("image")
-	.attr("xlink:href","tempmap.png") // If you adjust the map in matlab so that there are no margins it will fit. Maybe try to save it as an svg image. Alternatively shift the rectangles by the margins in your matlab image.
+	.attr("xlink:href","sandbox/woa_map.png") // If you adjust the map in matlab so that there are no margins it will fit. Maybe try to save it as an svg image. Alternatively shift the rectangles by the margins in your matlab image.
 	.attr("x",0)
 	.attr("y",0)
 	.attr("width",width)
