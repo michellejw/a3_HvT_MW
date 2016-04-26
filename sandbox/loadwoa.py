@@ -12,7 +12,9 @@ import matplotlib.pyplot as plt
 import matplotlib
 matplotlib.style.use('ggplot')  
 
-ncfile = 'woa13_A5B2_t00_01v2.nc'
+# %matplotlib qt # run this to plot in separate window
+
+ncfile = 'woa13_decav_t00_01v2.nc'
 xdf = xarray.open_dataset(ncfile,decode_times=False)
 
 justdata = xdf.t_an.data
@@ -20,3 +22,9 @@ dslice = justdata[0,0,:,:]
 
 latcorners = xdf.variables['lat']
 loncorners = xdf.variables['lon']
+
+fig = plt.imshow(dslice,origin='lower')
+plt.axis('off')
+fig.axes.get_xaxis().set_visible(False)
+fig.axes.get_yaxis().set_visible(False)
+plt.savefig('woa_map.png', bbox_inches='tight', pad_inches = 0)
