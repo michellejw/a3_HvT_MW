@@ -60,6 +60,7 @@ d3.json("woa_land.json", function(error, data){
 		.attr("width",width/(360/5))
 		.attr("height",height/(180/5))
 		.style("stroke", "none")
+		.style("stroke-width", 2)
 		.style("fill", "black")
 		.style("fill-opacity",0.2); //change opacity to see rectangles or make them disappear
 		
@@ -67,9 +68,11 @@ d3.json("woa_land.json", function(error, data){
 		"mouseover" : function(d) { d3.select(this).style("stroke", "white"); },
 		"mouseout" : function(d) { d3.select(this).style("stroke", "none"); },
 		"click" : function(d,i) {
+			d3.select(this).style("stroke", "black");
 			console.log(i);
 			console.log(d.geometry.coordinates[0]);
 			console.log(d.geometry.coordinates[1]);
+			console.log(this);
 		}
 	});
 
