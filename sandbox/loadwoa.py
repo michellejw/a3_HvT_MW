@@ -27,6 +27,7 @@ loncorners = xdf.variables['lon']
 # I need to convert to utm and then 
 # interpolate to a regular grid for plotting!!!
 
+
 fig = plt.imshow(dslice,origin='lower')
 plt.axis('off')
 fig.axes.get_xaxis().set_visible(False)
