@@ -13,9 +13,8 @@ import matplotlib
 matplotlib.style.use('ggplot')  
 
 # %matplotlib qt # run this to plot in separate window
-
-ncfile = 'woa13_decav_t00_01v2.nc'
 ncfile = '../../a3data/woa13_decav_t00_01v2.nc'
+ncfile5d = '../../a3data/woa13_decav_t00_5dv2.nc'
 xdf = xarray.open_dataset(ncfile,decode_times=False)
 xdf5d = xarray.open_dataset(ncfile5d,decode_times=False)
 
