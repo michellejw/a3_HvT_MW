@@ -18,16 +18,19 @@ var svg = d3.select("body")
 
 var dataset; //Global dataset variable so we can call it outside the callback function
 
+var projection = d3.geo.mercator();
+
+
 d3.json("woa_land.json", function(error, data){
 	if (error) return console.error(error);
 	console.log(data);
 
-	dataset = topojson.feature(data,data.objects.woa).features
+	dataset = topojson.feature(data,data.objects.woa).features;
 
 	var rects = svg.selectAll("rect")
 		.data(dataset)
 		.enter()
-		.append("rect");
+		.append("rect")
 		.attr("x", function(d) {
 			return d.geometry.coordinates[0];
 		})
