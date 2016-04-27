@@ -8,8 +8,11 @@
 <script src="//d3js.org/topojson.v1.min.js"></script>
 <script>
 
-var width = 992, 
-	height = 496;
+// var width = 992, 
+// 	height = 496;
+
+var width = 620*2, 
+	height = 310*2;
 
 // var width = 1000, // Do these dimensions need to match the dims of the image? (620x310)
 // 	height = 500;
@@ -24,28 +27,29 @@ var dataset; //Global dataset variable so we can call it outside the callback fu
 //var latScale = d3.scale.linear();
 //var longScale = d3.scale.linear(); // This only works because mercator projection is linear
 
-var projection = d3.geo.mercator();
+var projection = d3.geo.mercator().scale(75).translate([width/2, height/2]);
 
 // Set the origin of the image, which is the upper left corner. I figured that I should set it the same way we set the position of the rectangle, so with coordinates. That means it would be -180
 // var xyorigin = [-180, 80]; // this doesn't work, but I don't know why...
-var xyorigin = [-179.5,69.5]; // 
-
+// var xyorigin = [-179.5,69.5]; // 
+var xyorigin = [-180,80];
 
 svg.selectAll("image")
 	.data([xyorigin]).enter() // why does xyorigin have to be in brackets? ([])
 	.append("image")
 	.attr("xlink:href","sandbox/woa_map.png") // MW todo: Recreate image using utm coords
-	.attr("x",function(d) {
-		return projection(d)[0];
-	})
-	.attr("y",function(d) {
-		return projection(d)[1];
-	})
+//Image doesn't need x and y
+// 	.attr("x",function(d) {  
+// 		return projection(d)[0];
+// 	})
+// 	.attr("y",function(d) {
+// 		return projection(d)[1];
+// 	})
 	.attr("width",width)
 	.attr("height",height);
 
 
-d3.json("woa_land.json", function(error, data){
+d3.json("topo_woa.json", function(error, data){  //topo_woa.json removes the land shape. We don't need to load it anymore.
 	if (error) return console.error(error);
 
 	dataset = topojson.feature(data, data.objects.woa).features
@@ -72,6 +76,7 @@ d3.json("woa_land.json", function(error, data){
 			console.log(i);
 			console.log(d.geometry.coordinates[0]);
 			console.log(d.geometry.coordinates[1]);
+			console.log(this);
 		}
 	});
 
