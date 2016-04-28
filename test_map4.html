@@ -34,7 +34,7 @@ var xyorigin = [-179.5,69.5]; //
 svg.selectAll("image")
 	.data([xyorigin]).enter() // why does xyorigin have to be in brackets? ([])
 	.append("image")
-	.attr("xlink:href","sandbox/woa_map.png") // MW todo: Recreate image using utm coords
+	.attr("xlink:href","sandbox/woa_map3.png") // MW todo: Recreate image using utm coords
 	.attr("x",function(d) {
 		return projection(d)[0];
 	})
