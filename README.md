@@ -35,7 +35,7 @@ Here is our first idea:
 
 This is a sketch of the type of map we are envisioning (though for now, note that coordinates are not labeled correctly and the default image color map could probably be better).
 
-![tempmap](tempmap.png)
+![tempmap](https://github.com/michellejw/a3_HvT_MW/blob/Master/woa_map.png)
 
 ### Changes between Storyboard and the Final Implementation
 
