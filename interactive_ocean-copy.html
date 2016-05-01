@@ -309,14 +309,17 @@ d3.json("temp_salin.json", function(error, data){
 		},
 		"mouseout" : function(d) { 
 			if (this != active) { 
-				d3.select(this).style("fill", "none");
+				d3.select(this).style("fill-opacity", 0);
 			}
+			d3.select("#map").selectAll("text#hover1").text(" ");
+			d3.select("#map").selectAll("text#hover2").text(" ");
 		},
 		"click" : function(d,i) {
 			var coordIdx = i;
 			update(data, coordIdx);
 			d3.select(active).style("stroke", "none"); //de-select previous
-			d3.select(active).style("fill","none");
+			d3.select(active).style("fill", "black");
+			d3.select(active).style("fill-opacity", 0);
 			active = this;
 			d3.select(active).style("stroke", "white");
 			d3.select(active).style("stroke-width", 2);
