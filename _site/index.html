@@ -18,10 +18,28 @@ path {
     shape-rendering: crispEdges;
 }
 
+h1 {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+	font-family: Arial, Helvetica, sans-serif;
+	width: 500px;
+	line-height: 150%;
+	text-align: justify;
+}
+
 </style>
+
+
 <body>
 <script src="//d3js.org/d3.v3.min.js" charset="utf=8"></script>
 <script src="//d3js.org/topojson.v1.min.js"></script>
+
+<h1> CSE 512 - A3: Interactive World Ocean Atlas </h2>
+<p>This visualization shows temperature and salinity data from the <a href="https://www.nodc.noaa.gov/OC5/woa13/woa13data.html">World Ocean Atlas 2013 dataset.</a> All of the data shown are average values from 1955-2012. The background maps are generated using surface values binned at 1&deg; resolution. Clickable locations are at 5&deg; increments.
+</p>
+
 
 <!-- Add button div -->
 <div id="option">
@@ -264,11 +282,16 @@ d3.json("temp_salin.json", function(error, data){
 // Update background map based on button click (Temp/Salinity)
 function updateImage() {
 	if (img_sal == 1) {
-		d3.select("#bgmap").transition().attr("xlink:href","woa_temp2.png");
+		d3.select("#bgmap")
+		  .attr("xlink:href","woa_temp2.png")
+		  .attr("opacity",0)
+		  .transition()
+		  .delay(750)
+		  .attr("opacity",1);
 		img_sal = 0;
 	}
 	else {
-		d3.select("#bgmap").transition().attr("xlink:href","woa_sal2.png");
+		d3.select("#bgmap").attr("xlink:href","woa_sal2.png");
 		img_sal = 1;
 	}
 
