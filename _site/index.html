@@ -264,11 +264,11 @@ d3.json("temp_salin.json", function(error, data){
 // Update background map based on button click (Temp/Salinity)
 function updateImage() {
 	if (img_sal == 1) {
-		d3.select("#bgmap").attr("xlink:href","woa_temp2.png");
+		d3.select("#bgmap").transition().attr("xlink:href","woa_temp2.png");
 		img_sal = 0;
 	}
 	else {
-		d3.select("#bgmap").attr("xlink:href","woa_sal2.png");
+		d3.select("#bgmap").transition().attr("xlink:href","woa_sal2.png");
 		img_sal = 1;
 	}
 
