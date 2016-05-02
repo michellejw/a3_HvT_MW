@@ -52,9 +52,16 @@ In this visualization we linked a T-S diagram to a depth profile to show the int
 <img src="https://github.com/michellejw/a3_HvT_MW/blob/Master/sketch4.jpg" width="614">
 
 
+
 ### Changes between Storyboard and the Final Implementation
 
-A paragraph explaining changes between the storyboard and the final implementation.
+After going to office hours, we learned that D3 doesn't really interpolate colours on a map. We would have to use another javascript library to make this sort of map. Instead, Michael came up with an idea where we could generate the base map in python and then overlay interactive rectangles on top of the background.
+
+Originally we were going to map either temperature or salinity. After creating the visualization for temperature we decided to add salinity to make things more interesting. The user can toggle between two different surface maps for temperature and salinity and can visualize both salinity and temperature lines on the depth profile.
+
+We made longitude and latitude appear upon hovering over the map to help the user find and remember specific locations.
+
+After the lecture on colour, we moved away from the rainbow palette and used an XXXXXXX palette instead. This palette is better because _________________________________.
 
 
 ## Development Process
