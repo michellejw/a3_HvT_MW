@@ -33,7 +33,15 @@ This is a sketch of the type of map we are envisioning (though for now, note tha
 
 ![tempmap](https://github.com/michellejw/a3_HvT_MW/blob/Master/woa_map.png)
 
+We brainstormed several other versions of this visualization, but eventually decided to go with our first idea because it seems more intuitive.
 
+<img src="https://github.com/michellejw/a3_HvT_MW/blob/Master/sketch2.jpg" width="614">
+
+<img src="https://github.com/michellejw/a3_HvT_MW/blob/Master/sketch3.jpg" width="614">
+
+<img src="https://github.com/michellejw/a3_HvT_MW/blob/Master/sketch4.jpg" width="614">
+
+<img src="https://github.com/michellejw/a3_HvT_MW/blob/Master/sketch5.jpg" width="614">
 
 ### Changes between Storyboard and the Final Implementation
 
