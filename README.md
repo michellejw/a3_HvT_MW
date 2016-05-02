@@ -62,9 +62,13 @@ Originally we were only going to map one variable. After creating the visualizat
 
 We made longitude and latitude appear upon hovering over the map to help the user find and remember specific locations.
 
-After the lecture on colour, we moved away from the rainbow palette and used an XXXXXXX palette instead. This palette is better because _________________________________
+After the lecture on colour, we moved away from the rainbow palette and used an XXXXXXX palette instead. This palette is better because _________________________________.
+
+Originally, the plan was to keep all the axes constant to make the different profiles easily comparable. However, the salinity values had a really wide range and included some pretty low values in only a few locations. This broad salinity axis prevented the viewer from seeing the changes in the shape of the salinity profile, so we adjusted the salinity axis for each location.
 
 ## Development Process
+
+To start, Helena created the depth profile while Michelle created the map. After the two visualization were merged we both worked on the interactive components linking the two plots together.
 
 Include:
 - Breakdown of how the work was split among the group members.
