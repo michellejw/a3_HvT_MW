@@ -15,6 +15,8 @@ For this project, we developed an interactive visualization using data from the 
 
 Access our visualization at http://cse512-16s.github.io/a3-michellejw-hmvantol/ or download this repository and run `python -m SimpleHTTPServer 9000` and access this from http://localhost:9000/.
 
+If you don't see the map at first, expand your browser window width until the two diagrams are side-by-side.
+
 ## Story Board
 
 ### Data domain
@@ -22,7 +24,7 @@ Since we are both Oceanography graduate students, we decided to go with an ocean
 
 Oceanographers regularly explore large multi-variable data sets in 4D space (longitude, latitude, depth, time). Common visualizations include [contour maps](http://www.ospo.noaa.gov/Products/ocean/sst/contour/), [depth profiles](https://en.wikipedia.org/wiki/Thermocline#/media/File:THERMOCLINE.png), and [T-S diagrams](https://oceanpython.files.wordpress.com/2013/02/ts_diagram.png). On research cruises, oceanographers will interact with data as it is being collected to make decisions about where to sample along the cruise track and at which depths. Data exploration could be supported by linking multiple commonly used visualizations, allowing the user to observe multiple dimensions at once.
 
-Here is our first idea:
+Here is our first sketch of the visualization:
 <br>
 <img src="https://github.com/michellejw/a3_HvT_MW/blob/Master/sketch1.jpg" width="614">
 
