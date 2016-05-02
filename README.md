@@ -28,9 +28,16 @@ Here is our first sketch of the visualization:
 <br>
 <img src="https://github.com/michellejw/a3_HvT_MW/blob/Master/sketch1.jpg" width="614">
 
+We envision a map of sea surface temperature that the viewer can click to bring up depth profiles from different locations.
 This is a sketch of the type of map we are envisioning (though for now, note that coordinates are not labeled correctly and the default image color map could probably be better).
-
+<br>
 ![tempmap](https://github.com/michellejw/a3_HvT_MW/blob/Master/woa_map.png)
+
+We went through several different versions of this idea, but settled on the first sketch because it seemed more intuitive and easier for us to implement.
+<img src="https://github.com/michellejw/a3_HvT_MW/blob/Master/sketch2.jpg" width="614">
+<img src="https://github.com/michellejw/a3_HvT_MW/blob/Master/sketch3.jpg" width="614">
+<img src="https://github.com/michellejw/a3_HvT_MW/blob/Master/sketch4.jpg" width="614">
+<img src="https://github.com/michellejw/a3_HvT_MW/blob/Master/sketch5.jpg" width="614">
 
 ### Changes between Storyboard and the Final Implementation
 
