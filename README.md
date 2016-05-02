@@ -35,13 +35,18 @@ This is a sketch of the type of map we are envisioning (though for now, note tha
 
 We brainstormed several other versions of this visualization, but eventually decided to go with our first idea because it seems more intuitive.
 
+In this version, the viewer can click on the map to bring up a depth profile or click on a depth in the profile to change the depth visualized on the map.
 <img src="https://github.com/michellejw/a3_HvT_MW/blob/Master/sketch2.jpg" width="614">
 
+This one is similar to the previous idea, but the depth profile shows an entire latitude or longitude range.
+<img src="https://github.com/michellejw/a3_HvT_MW/blob/Master/sketch5.jpg" width="614">
+
+In this sketch, the depth profile hovers next to the mouse icon and changes depending on the map location.
 <img src="https://github.com/michellejw/a3_HvT_MW/blob/Master/sketch3.jpg" width="614">
 
+In this visualization we linked a T-S diagram to a depth profile to show the interaction between temperature and salinity rather than a map.
 <img src="https://github.com/michellejw/a3_HvT_MW/blob/Master/sketch4.jpg" width="614">
 
-<img src="https://github.com/michellejw/a3_HvT_MW/blob/Master/sketch5.jpg" width="614">
 
 ### Changes between Storyboard and the Final Implementation
 
