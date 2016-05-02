@@ -23,7 +23,7 @@ Since we are both Oceanography graduate students, we decided to go with an ocean
 Oceanographers regularly explore large multi-variable data sets in 4D space (longitude, latitude, depth, time). Common visualizations include [contour maps](http://www.ospo.noaa.gov/Products/ocean/sst/contour/), [depth profiles](https://en.wikipedia.org/wiki/Thermocline#/media/File:THERMOCLINE.png), and [T-S diagrams](https://oceanpython.files.wordpress.com/2013/02/ts_diagram.png). On research cruises, oceanographers will interact with data as it is being collected to make decisions about where to sample along the cruise track and at which depths. Data exploration could be supported by linking multiple commonly used visualizations, allowing the user to observe multiple dimensions at once.
 
 Here is our first idea:
-![Sketch 1](sketch1.jpg =100)
+![Sketch 1](sketch1.jpg =1632x1224)
 
 This is a sketch of the type of map we are envisioning (though for now, note that coordinates are not labeled correctly and the default image color map could probably be better).
 
