@@ -24,21 +24,16 @@ Since we are both Oceanography graduate students, we decided to go with an ocean
 
 Oceanographers regularly explore large multi-variable data sets in 4D space (longitude, latitude, depth, time). Common visualizations include [contour maps](http://www.ospo.noaa.gov/Products/ocean/sst/contour/), [depth profiles](https://en.wikipedia.org/wiki/Thermocline#/media/File:THERMOCLINE.png), and [T-S diagrams](https://oceanpython.files.wordpress.com/2013/02/ts_diagram.png). On research cruises, oceanographers will interact with data as it is being collected to make decisions about where to sample along the cruise track and at which depths. Data exploration could be supported by linking multiple commonly used visualizations, allowing the user to observe multiple dimensions at once.
 
-Here is our first sketch of the visualization:
-<br>
+Here is our sketch of the visualization:
+
 <img src="https://github.com/michellejw/a3_HvT_MW/blob/Master/sketch1.jpg" width="614">
 
 We envision a map of sea surface temperature that the viewer can click to bring up depth profiles from different locations.
 This is a sketch of the type of map we are envisioning (though for now, note that coordinates are not labeled correctly and the default image color map could probably be better).
-<br>
+
 ![tempmap](https://github.com/michellejw/a3_HvT_MW/blob/Master/woa_map.png)
 
-We went through several different versions of this idea, but settled on the first sketch because it seemed more intuitive and easier for us to implement.
 
-<img src="https://github.com/michellejw/a3_HvT_MW/blob/Master/sketch2.jpg" width="614">
-<br><img src="https://github.com/michellejw/a3_HvT_MW/blob/Master/sketch3.jpg" width="614">
-<br><img src="https://github.com/michellejw/a3_HvT_MW/blob/Master/sketch4.jpg" width="614">
-<img src="https://github.com/michellejw/a3_HvT_MW/blob/Master/sketch5.jpg" width="614">
 
 ### Changes between Storyboard and the Final Implementation
 
